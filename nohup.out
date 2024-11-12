@@ -21244,3 +21244,773 @@ Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1
 2024-11-12T07:37:10.037Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg","matchType":"SHORTSQUAT"}}
 2024-11-12T07:37:10.037Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
 2024-11-12T07:37:10.037Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T07:42:16.571Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /
+2024-11-12T07:42:16.571Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /
+2024-11-12T07:42:16.572Z ERROR 102084 --- [fight] [-nio-443-exec-3] g.fight.controller.ErrorController       : error:
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at gainnim.fight.filter.TokenFilter.doFilter(TokenFilter.kt:29) ~[!/:0.0.1-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at gainnim.fight.filter.TokenFilter.doFilter(TokenFilter.kt:29) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-11-12T07:42:17.428Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /favicon.ico
+2024-11-12T07:42:17.428Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /favicon.ico
+2024-11-12T07:42:17.431Z ERROR 102084 --- [fight] [-nio-443-exec-7] g.fight.controller.ErrorController       : error:
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at gainnim.fight.filter.TokenFilter.doFilter(TokenFilter.kt:29) ~[!/:0.0.1-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at gainnim.fight.filter.TokenFilter.doFilter(TokenFilter.kt:29) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-11-12T07:49:41.082Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:49:41.083Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:49:41.110Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ","matchType":"SHORTSQUAT"}}
+2024-11-12T07:49:41.110Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:49:41.110Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T07:49:50.497Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : {"event":"MATCHINGCANCEL","data":{}}
+2024-11-12T07:49:50.497Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : MATCHINGCANCEL
+2024-11-12T07:49:53.195Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:49:53.195Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:49:53.215Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ","matchType":"SHORTSQUAT"}}
+2024-11-12T07:49:53.215Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:49:53.215Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T07:51:02.500Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : {"event":"MATCHINGCANCEL","data":{}}
+2024-11-12T07:51:02.500Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : MATCHINGCANCEL
+2024-11-12T07:54:40.746Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:54:40.746Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:54:40.768Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ","matchType":"SHORTSQUAT"}}
+2024-11-12T07:54:40.768Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:54:40.768Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T07:54:46.502Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : {"event":"MATCHINGCANCEL","data":{}}
+2024-11-12T07:54:46.502Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : MATCHINGCANCEL
+2024-11-12T07:54:50.066Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:54:50.066Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:54:50.090Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ","matchType":"SHORTSQUAT"}}
+2024-11-12T07:54:50.090Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:54:50.090Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T07:54:51.144Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.handler.WebsocketHandler   : {"event":"MATCHINGCANCEL","data":{}}
+2024-11-12T07:54:51.144Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.handler.WebsocketHandler   : MATCHINGCANCEL
+2024-11-12T07:54:55.572Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:54:55.572Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:54:55.606Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ","matchType":"SHORTSQUAT"}}
+2024-11-12T07:54:55.606Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:54:55.606Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T07:55:13.984Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:55:13.984Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:55:14.174Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg","matchType":"SHORTSQUAT"}}
+2024-11-12T07:55:14.174Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:55:14.174Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:55:14.211Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : {"event":"READIED","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b"}}
+2024-11-12T07:55:14.211Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : READIED
+2024-11-12T07:55:14.395Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.handler.WebsocketHandler   : {"event":"READIED","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b"}}
+2024-11-12T07:55:14.395Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.handler.WebsocketHandler   : READIED
+2024-11-12T07:55:30.669Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b","timestamp":1731398130126,"score":0,"scoreChangeVolume":1,"id":"9b6b6f45-8af3-40a6-9e8c-1dee475a6ffd"}}
+2024-11-12T07:55:30.669Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+2024-11-12T07:55:32.739Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b","timestamp":1731398132199,"score":1,"scoreChangeVolume":1,"id":"9b6b6f45-8af3-40a6-9e8c-1dee475a6ffd"}}
+2024-11-12T07:55:32.739Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+2024-11-12T07:55:34.668Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b","timestamp":1731398134124,"score":2,"scoreChangeVolume":1,"id":"9b6b6f45-8af3-40a6-9e8c-1dee475a6ffd"}}
+2024-11-12T07:55:34.668Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+2024-11-12T07:55:36.639Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b","timestamp":1731398136095,"score":3,"scoreChangeVolume":1,"id":"9b6b6f45-8af3-40a6-9e8c-1dee475a6ffd"}}
+2024-11-12T07:55:36.639Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+2024-11-12T07:55:38.616Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b","timestamp":1731398138064,"score":4,"scoreChangeVolume":1,"id":"9b6b6f45-8af3-40a6-9e8c-1dee475a6ffd"}}
+2024-11-12T07:55:38.616Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+2024-11-12T07:55:40.465Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b","timestamp":1731398139922,"score":5,"scoreChangeVolume":1,"id":"9b6b6f45-8af3-40a6-9e8c-1dee475a6ffd"}}
+2024-11-12T07:55:40.466Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+2024-11-12T07:55:41.785Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{}}
+2024-11-12T07:55:41.785Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from game_history gh1_0 left join user u1_0 on u1_0.id=gh1_0.user_id where gh1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: insert into game_history (created_at,match_type,result,score,user_id,id) values (?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from game_history gh1_0 left join user u1_0 on u1_0.id=gh1_0.user_id where gh1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: insert into game_history (created_at,match_type,result,score,user_id,id) values (?,?,?,?,?,?)
+2024-11-12T07:55:42.203Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{"roomId":"1f583fef-a372-423e-b670-d284b519406b","timestamp":1731398141639,"score":6,"scoreChangeVolume":1,"id":"9b6b6f45-8af3-40a6-9e8c-1dee475a6ffd"}}
+2024-11-12T07:55:42.203Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+2024-11-12T07:57:00.863Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:57:00.863Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:57:00.888Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ","matchType":"SHORTSQUAT"}}
+2024-11-12T07:57:00.888Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:57:00.888Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T07:57:18.892Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:57:18.892Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:57:19.085Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg","matchType":"SHORTSQUAT"}}
+2024-11-12T07:57:19.085Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:57:19.085Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:57:19.136Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : {"event":"READIED","data":{"roomId":"41ce8b18-464f-4596-91fb-e4649c749434"}}
+2024-11-12T07:57:19.137Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : READIED
+2024-11-12T07:57:19.295Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : {"event":"READIED","data":{"roomId":"41ce8b18-464f-4596-91fb-e4649c749434"}}
+2024-11-12T07:57:19.295Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : READIED
+2024-11-12T07:57:21.107Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : {"event":"SCOREUPDATE","data":{}}
+2024-11-12T07:57:21.107Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : SCOREUPDATE
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from game_history gh1_0 left join user u1_0 on u1_0.id=gh1_0.user_id where gh1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: insert into game_history (created_at,match_type,result,score,user_id,id) values (?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from game_history gh1_0 left join user u1_0 on u1_0.id=gh1_0.user_id where gh1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: insert into game_history (created_at,match_type,result,score,user_id,id) values (?,?,?,?,?,?)
+2024-11-12T07:58:45.602Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:58:45.603Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:58:45.625Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ","matchType":"SHORTSQUAT"}}
+2024-11-12T07:58:45.625Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:58:45.625Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T07:58:54.409Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:58:54.409Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T07:58:54.600Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg","matchType":"SHORTSQUAT"}}
+2024-11-12T07:58:54.601Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T07:58:54.601Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:58:54.673Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : {"event":"READIED","data":{"roomId":"ac9eb894-02dd-474e-a19d-000ac8d38403"}}
+2024-11-12T07:58:54.673Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.handler.WebsocketHandler   : READIED
+2024-11-12T07:58:54.833Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : {"event":"READIED","data":{"roomId":"ac9eb894-02dd-474e-a19d-000ac8d38403"}}
+2024-11-12T07:58:54.833Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : READIED
+2024-11-12T07:58:56.657Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : {"event":"GIVEUP","data":{}}
+2024-11-12T07:58:56.657Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : GIVEUP
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from game_history gh1_0 left join user u1_0 on u1_0.id=gh1_0.user_id where gh1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: insert into game_history (created_at,match_type,result,score,user_id,id) values (?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from game_history gh1_0 left join user u1_0 on u1_0.id=gh1_0.user_id where gh1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: insert into game_history (created_at,match_type,result,score,user_id,id) values (?,?,?,?,?,?)
+2024-11-12T07:59:13.692Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /ranking
+2024-11-12T07:59:13.693Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /ranking
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:13.748Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:13.748Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T07:59:13.750Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:13.750Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:17.713Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : /ranking
+2024-11-12T07:59:17.713Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : /ranking
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:17.927Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:17.927Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:17.929Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:17.929Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:27.377Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:27.377Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T07:59:27.379Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:27.379Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:27.410Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:27.410Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T07:59:27.412Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:27.412Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T07:59:43.001Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:43.001Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:43.003Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:43.003Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:43.197Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:43.197Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:43.200Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:43.200Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T07:59:44.702Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ranking
+2024-11-12T07:59:44.702Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ranking
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:44.922Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:44.922Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:44.925Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:44.926Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:45.546Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:45.546Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:45.548Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:45.548Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:45.753Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:45.753Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:45.755Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:45.755Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T07:59:45.828Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : /user/status
+2024-11-12T07:59:45.828Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T07:59:45.829Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : /user/status
+2024-11-12T07:59:45.829Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+2024-11-12T07:59:50.788Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /ranking
+2024-11-12T07:59:50.788Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /ranking
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:50.836Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:50.836Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T07:59:50.838Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:50.838Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:51.046Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:51.046Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T07:59:51.048Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:51.048Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:51.080Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:51.080Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T07:59:51.082Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:51.082Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T07:59:53.916Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : /ranking
+2024-11-12T07:59:53.917Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : /ranking
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:54.127Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:54.127Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:54.129Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:54.129Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:54.974Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:54.974Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:54.976Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T07:59:54.976Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T07:59:55.166Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:55.166Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T07:59:55.168Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T07:59:55.168Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T08:00:22.402Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:00:22.403Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T08:00:22.406Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:00:22.407Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:00:22.665Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T08:00:22.665Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+2024-11-12T08:00:22.671Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T08:00:22.671Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T08:00:30.462Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T08:00:30.462Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T08:00:30.724Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg","matchType":"SHORTSQUAT"}}
+2024-11-12T08:00:30.724Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T08:00:30.724Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T08:00:34.607Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.handler.WebsocketHandler   : {"event":"MATCHINGCANCEL","data":{}}
+2024-11-12T08:00:34.607Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.handler.WebsocketHandler   : MATCHINGCANCEL
+2024-11-12T08:00:42.186Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T08:00:42.186Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T08:00:42.216Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ","matchType":"SHORTSQUAT"}}
+2024-11-12T08:00:42.216Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T08:00:42.216Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+2024-11-12T08:00:46.692Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T08:00:46.692Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /ws
+2024-11-12T08:00:46.937Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : {"event":"RANDOMMATCH","data":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI5YjZiNmY0NS04YWYzLTQwYTYtOWU4Yy0xZGVlNDc1YTZmZmQiLCJleHAiOjM2MDAwMDE3MzEzMTk1NTh9.wLDkbe2ld51jbjX8rXtH4zWnpdJDfPN8FoCceCGvTqAX0z7Mc6RtHrCfrhJ0BHdzfa8TjLmF-TAcX8ekDa3Pfg","matchType":"SHORTSQUAT"}}
+2024-11-12T08:00:46.937Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : RANDOMMATCH
+2024-11-12T08:00:46.937Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.handler.WebsocketHandler   : SHORTSQUAT
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:00:46.993Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : {"event":"READIED","data":{"roomId":"6945542c-0d81-4a5d-a5c3-2acce670ec34"}}
+2024-11-12T08:00:46.993Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.handler.WebsocketHandler   : READIED
+2024-11-12T08:00:47.245Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.handler.WebsocketHandler   : {"event":"READIED","data":{"roomId":"6945542c-0d81-4a5d-a5c3-2acce670ec34"}}
+2024-11-12T08:00:47.245Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.handler.WebsocketHandler   : READIED
+2024-11-12T08:00:51.378Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : {"event":"GIVEUP","data":{}}
+2024-11-12T08:00:51.378Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.handler.WebsocketHandler   : GIVEUP
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from game_history gh1_0 left join user u1_0 on u1_0.id=gh1_0.user_id where gh1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: insert into game_history (created_at,match_type,result,score,user_id,id) values (?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: update user set agility=?,endurance=?,login_id=?,name=?,password=?,profile_img_url=?,status_message=?,strength=?,total_power=?,willpower=? where id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from game_history gh1_0 left join user u1_0 on u1_0.id=gh1_0.user_id where gh1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: insert into game_history (created_at,match_type,result,score,user_id,id) values (?,?,?,?,?,?)
+2024-11-12T08:01:28.998Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:01:28.998Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:01:29.000Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:01:29.000Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:01:29.051Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T08:01:29.051Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:01:29.054Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T08:01:29.054Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T08:01:32.317Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /user/img
+2024-11-12T08:01:32.317Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:01:32.319Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /user/img
+2024-11-12T08:01:32.319Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:01:32.355Z ERROR 102084 --- [fight] [-nio-443-exec-8] g.fight.controller.ErrorController       : error:
+
+org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'image' is not present.
+	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:168) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at gainnim.fight.filter.TokenFilter.doFilter(TokenFilter.kt:29) ~[!/:0.0.1-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at gainnim.fight.filter.TokenFilter.doFilter(TokenFilter.kt:29) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-11-12T08:02:08.482Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /ranking
+2024-11-12T08:02:08.482Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /ranking
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:02:08.536Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:08.536Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:08.538Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:08.539Z  INFO 102084 --- [fight] [-nio-443-exec-6] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:02:13.260Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ranking
+2024-11-12T08:02:13.261Z  INFO 102084 --- [fight] [-nio-443-exec-5] gainnim.fight.filter.TokenFilter         : /ranking
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:02:13.310Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:13.310Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:13.312Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:13.312Z  INFO 102084 --- [fight] [nio-443-exec-10] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:02:14.326Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:14.326Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:14.328Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:14.328Z  INFO 102084 --- [fight] [-nio-443-exec-8] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:02:14.356Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T08:02:14.356Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:14.358Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T08:02:14.358Z  INFO 102084 --- [fight] [-nio-443-exec-4] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T08:02:14.969Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /ranking
+2024-11-12T08:02:14.969Z  INFO 102084 --- [fight] [-nio-443-exec-7] gainnim.fight.filter.TokenFilter         : /ranking
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:02:15.014Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:15.014Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:15.016Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:15.016Z  INFO 102084 --- [fight] [-nio-443-exec-2] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:02:45.896Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:45.896Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:45.898Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : /user
+2024-11-12T08:02:45.898Z  INFO 102084 --- [fight] [-nio-443-exec-1] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+2024-11-12T08:02:45.939Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T08:02:45.939Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:45.946Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : /history
+2024-11-12T08:02:45.946Z  INFO 102084 --- [fight] [-nio-443-exec-9] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+Hibernate: select u1_0.id,u1_0.agility,u1_0.endurance,u1_0.login_id,u1_0.name,u1_0.password,u1_0.profile_img_url,u1_0.status_message,u1_0.strength,u1_0.total_power,u1_0.willpower from user u1_0 where u1_0.id=?
+Hibernate: select gh1_0.id,gh1_0.created_at,gh1_0.match_type,gh1_0.result,gh1_0.score,gh1_0.user_id from game_history gh1_0 where gh1_0.user_id=? order by gh1_0.created_at desc
+2024-11-12T08:02:49.717Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /user/img
+2024-11-12T08:02:49.718Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:49.720Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : /user/img
+2024-11-12T08:02:49.720Z  INFO 102084 --- [fight] [-nio-443-exec-3] gainnim.fight.filter.TokenFilter         : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2ZTIxZjRhNi04Y2E3LTRhNmYtOTVhMS04OGYzOGE4NmEyODYiLCJleHAiOjM2MDAwMDE3MzEzMjU3NTZ9.MgNjQT3QBIX_nbFjOLkOd2Bp7fEFkxo3KLvu9aWn3-bzX7hJ8VT9WU_ynWqw3facM3pdnzzTUCv7ocEx28TtyQ
+2024-11-12T08:02:49.745Z ERROR 102084 --- [fight] [-nio-443-exec-3] g.fight.controller.ErrorController       : error:
+
+org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'image' is not present.
+	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:168) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at gainnim.fight.filter.TokenFilter.doFilter(TokenFilter.kt:29) ~[!/:0.0.1-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at gainnim.fight.filter.TokenFilter.doFilter(TokenFilter.kt:29) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.4.jar!/:6.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar!/:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
